@@ -9,8 +9,8 @@ int main(void)
 {
 	ssize_t line;
 
-	line = getline();
+	line = getline(char **restrict lineptr, size_t *restrict n, FILE *restrict stream);
 	printf("$ \n");
-	printf("%u\n", line);
+	printf("%lu\n", line);
 	return (0);
 }
